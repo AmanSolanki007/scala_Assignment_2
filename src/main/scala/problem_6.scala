@@ -7,9 +7,9 @@ object problem_6 {
     var Max = Integer.MIN_VALUE
     var m_i = -1
     var m_j = -1
-    for (i <- 0 to arr.length - 1)
+    for (i <- 0 until arr.length - 1)
     {
-      for (j <- i+1 to arr.length - 1)
+      for (j <- i+1 until arr.length - 1)
       {
         if (Max < arr(i) * arr(j))
         {

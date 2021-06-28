@@ -3,7 +3,7 @@ object problem_4 {
   val list = List (2, -4, 3, -1, 23, -4, -54)
     absolute(list)
   }
-  def absolute(list: List[Int])={
+  def absolute(list: List[Int]): Unit ={
     for (num<-list)
       println(num.abs)
   }

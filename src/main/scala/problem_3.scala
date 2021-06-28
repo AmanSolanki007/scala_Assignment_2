@@ -3,7 +3,7 @@ object problem_3 {
     val list = List(2, 5, 1, 4, 3, 7, 8, 6, 0, 9)
     counter(list)
   }
-  def counter(list: List[Int])={
+  def counter(list: List[Int]): Unit ={
     val last_element = list.last
     val count_element = list.indexOf(last_element)+1
     println(count_element)
