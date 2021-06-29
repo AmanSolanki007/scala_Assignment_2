@@ -1,13 +1,14 @@
 object problem_1 {
   def main(args: Array[String]): Unit = {
     val list =List(1,2,3,4)
-    reapeter(3,list)
+    val result = reapeter(3,list)
+    for (i<-result)
+      println(i)
   }
-  def reapeter (num:Int,arr:List[Int]): Unit = {
+  def reapeter (num:Int,arr:List[Int]):List[Int]= {
 
-    val result = arr.flatMap(List.fill(num)(_))
-    for (x<- result)
-      println(x)
+     arr.flatMap(List.fill(num)(_))
+
   }
 
 }
